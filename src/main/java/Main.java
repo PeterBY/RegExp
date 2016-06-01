@@ -4,10 +4,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws IOException {
         String regexIP4 = "(?i)^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|0x[0-9a-f]{2}|0[0-7]{3})\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|0x[0-9a-f]{2}|0[0-7]{3})\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|0x[0-9a-f]{2}|0[0-7]{3})\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|0x[0-9a-f]{2}|0[0-7]{3})|0x[0-9a-f]{8}|(1|[1-7][0-7]|[1-3][0-7]{2})[0-7]{8}|[1-9][0-9]{7,9})$";
-        String regexDomain = "(?i)^https?\\:\\/\\/([a-z0-9]+|[a-z0-9][a-z0-9\\-?\\.]*[a-z0-9])\\.[a-z]+\\/?$";
+        String regexURL = "(?i)^https?\\:\\/\\/([a-z0-9]+|[a-z0-9][a-z0-9\\-?\\.]*[a-z0-9])\\.[a-z]+\\/?$";
 
         regex_match("ip.txt", regexIP4);
-        regex_match("domain.txt", regexDomain);
+        regex_match("url.txt", regexURL);
     }
 
     public static void regex_match(String pathToTxtFileWithDataList, String regex) throws IOException {
