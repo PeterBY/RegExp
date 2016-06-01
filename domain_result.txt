@@ -1,0 +1,41 @@
+http://example.com/	match
+https://example.com/	match
+http://www.example.com/	match
+http://example.org/	match
+http://example.co.uk	match
+http://bla.bla.biz	match
+http://1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa	match
+https://boring.museum	match
+http://lynx.io/	match
+https://example.edu	match
+http://example.gov/	match
+http://sub.example.cd	match
+https://personal.test.me	match
+http://0test.com/	match
+http://a.b	match
+http://this-test.com	match
+http://test.this-test.com/	match
+http://this-test.test.com	match
+http://TESTdomain.com	match
+http://abcdefghijklmnopqrstuvwxyz.com	match
+example.com	no match
+www.example.com	no match
+invalid://example.com	no match
+httpd://example.com/	no match
+ahttp://example.com	no match
+javascript:alert()	no match
+mailto:nobody@example.com	no match
+http://test ing.com	no match
+http://test'ing.com	no match
+http://test_ing.com	no match
+http://inval.id,com	no match
+http://	no match
+http://.com	no match
+http://.....com	no match
+[http://example..com/]http://example..com	no match
+http://example.com.	no match
+http://-example.com	no match
+http://example-.com	no match
+http://example.com-	no match
+[http://1234567890123456789012345678901234567890123456789012345678901234.com/]http://1234567890123456789012345678901234567890123456789012345678901234.com	no match
+http://0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.com	match
